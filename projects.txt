@@ -1,0 +1,20 @@
+Digital Clock
+Countdown Timer
+Tip Calculator
+Expense Tracker
+ToDo List
+Random Quote Generate
+Image Slider
+Quiz App
+Currency Calculator
+Password Generator
+Memory Game
+Notes App
+Task Manager
+Image Gallery
+Landing Page
+URL Shortner
+Word Counter
+Speech Recognition
+Weather App
+Api project(crypto, translation, covid)

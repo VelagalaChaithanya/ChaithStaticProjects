@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+
+        <div class="game-body">
+            <div class="r1 l1" id='tl'></div>
+            <div class="r1 l1" id='tm'></div>
+            <div class="r1 re" id='tr'></div>
+            <div class="r1 l1" id='ml'></div>
+            <div class="r1 l1" id='mm'></div>
+            <div class="r1 re" id='mr'></div>
+            <div class="r1 last" id='bl'></div>
+            <div class="r1 last" id='bm'></div>
+            <div class="r1" id='br'></div>
+        </div>
+        <div class="content">
+            <div class="players">
+                <div class="player player-active" id="player1">Player 1</div>
+                <div class="player" id="player2">Player 2</div>
+            </div>
+            <div>
+                <br>
+                Player 1 - <span id="player1-role">X</span> <br>
+                Player 2 - <span id="player2-role">O</span> <br> <br>
+            </div>
+
+            <table width="100%">
+                <tr>
+                    <td colspan="2"> Score:</td>
+                </tr>
+                <tr>
+                    <td>Player 1</td>
+                    <td>Player 2</td>
+                </tr>
+                <tr>
+                    <td id="player1-score">0</td>
+                    <td id="player2-score">0</td>
+                </tr>
+            </table>
+            <div class="game-over">
+                <div id="winner"> Game Over <br>
+                    Draw <br></div> 
+                <button class="player" onclick="restart()">Restart</button>
+            </div>
+            
+               
+            
+        </div>
+    </div>
+
+    <script src="myjs.js"></script>
+</body>
+</html>

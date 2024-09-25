@@ -1,0 +1,51 @@
+body{
+    align-content: center;
+    text-align: center;
+    margin: 0;
+}
+.gamebody{
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+}
+.left{
+    width: 50%;
+    background-color: skyblue;
+    min-height: 80vh;
+    text-align: center;
+    
+}
+.right{
+    width: 50%;
+    background-color: lightcoral;
+    min-height: 80vh;
+
+}
+.computer{
+    height: 210px;
+    width: 210px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.player{
+    margin-left: auto;
+    margin-right: auto;
+}
+.play{
+    position: absolute;
+    bottom: 30px;
+    left: 0; 
+    right: 0; 
+    margin: 0 auto;
+}
+#playBtn{
+    padding: 10px 20px;
+}
+
+.options{
+    display: inline-flex;
+    gap: 20px;
+}

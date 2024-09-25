@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onReady()">
+    <div class="page">
+        <div class="left">
+            <button id="createSudoku"> Create Sudoku </button>
+            <button id="get-answer"> Get Answer </button>
+        </div>
+        <div class="body">
+            <input type="text" id="c00" class="l2" maxlength="1">
+            <input type="text" id="c01" class="l2" maxlength="1">
+            <input type="text" id="c02" class="l2" maxlength="1">
+            <input type="text" id="c03" class="l2" maxlength="1">
+            <input type="text" id="c04" class="l2" maxlength="1">
+            <input type="text" id="c05" class="l2" maxlength="1">
+            <input type="text" id="c06" class="l2" maxlength="1">
+            <input type="text" id="c07" class="l2" maxlength="1">
+            <input type="text" id="c08" class="l2" maxlength="1">
+            <input type="text" id="c10" class="l2" maxlength="1">
+            <input type="text" id="c11" class="l2" maxlength="1">
+            <input type="text" id="c12" class="l2" maxlength="1">
+            <input type="text" id="c13" class="l2" maxlength="1">
+            <input type="text" id="c14" class="l2" maxlength="1">
+            <input type="text" id="c15" class="l2" maxlength="1">
+            <input type="text" id="c16" class="l2" maxlength="1">
+            <input type="text" id="c17" class="l2" maxlength="1">
+            <input type="text" id="c18" class="l2" maxlength="1">
+
+            <input type="text" id="c20" class="l2" maxlength="1">
+            <input type="text" id="c21" class="l2" maxlength="1">
+            <input type="text" id="c22" class="l2" maxlength="1">
+            <input type="text" id="c23" class="l2" maxlength="1">
+            <input type="text" id="c24" class="l2" maxlength="1">
+            <input type="text" id="c25" class="l2" maxlength="1">
+            <input type="text" id="c26" class="l2" maxlength="1">
+            <input type="text" id="c27" class="l2" maxlength="1">
+            <input type="text" id="c28" class="l2" maxlength="1">
+            <input type="text" id="c30" class="l2" maxlength="1">
+            <input type="text" id="c31" class="l2" maxlength="1">
+            <input type="text" id="c32" class="l2" maxlength="1">
+            <input type="text" id="c33" class="l2" maxlength="1">
+            <input type="text" id="c34" class="l2" maxlength="1">
+            <input type="text" id="c35" class="l2" maxlength="1">
+            <input type="text" id="c36" class="l2" maxlength="1">
+            <input type="text" id="c37" class="l2" maxlength="1">
+            <input type="text" id="c38" class="l2" maxlength="1">
+            <input type="text" id="c40" class="l2" maxlength="1">
+            <input type="text" id="c41" class="l2" maxlength="1">
+            <input type="text" id="c42" class="l2" maxlength="1">
+            <input type="text" id="c43" class="l2" maxlength="1">
+            <input type="text" id="c44" class="l2" maxlength="1">
+            <input type="text" id="c45" class="l2" maxlength="1">
+            <input type="text" id="c46" class="l2" maxlength="1">
+            <input type="text" id="c47" class="l2" maxlength="1">
+            <input type="text" id="c48" class="l2" maxlength="1">
+            <input type="text" id="c50" class="l2" maxlength="1">
+            <input type="text" id="c51" class="l2" maxlength="1">
+            <input type="text" id="c52" class="l2" maxlength="1">
+            <input type="text" id="c53" class="l2" maxlength="1">
+            <input type="text" id="c54" class="l2" maxlength="1">
+            <input type="text" id="c55" class="l2" maxlength="1">
+            <input type="text" id="c56" class="l2" maxlength="1">
+            <input type="text" id="c57" class="l2" maxlength="1">
+            <input type="text" id="c58" class="l2" maxlength="1">
+            <input type="text" id="c60" class="l2" maxlength="1">
+            <input type="text" id="c61" class="l2" maxlength="1">
+            <input type="text" id="c62" class="l2" maxlength="1">
+            <input type="text" id="c63" class="l2" maxlength="1">
+            <input type="text" id="c64" class="l2" maxlength="1">
+            <input type="text" id="c65" class="l2" maxlength="1">
+            <input type="text" id="c66" class="l2" maxlength="1">
+            <input type="text" id="c67" class="l2" maxlength="1">
+            <input type="text" id="c68" class="l2" maxlength="1">
+            <input type="text" id="c70" class="l2" maxlength="1">
+            <input type="text" id="c71" class="l2" maxlength="1">
+            <input type="text" id="c72" class="l2" maxlength="1">
+            <input type="text" id="c73" class="l2" maxlength="1">
+            <input type="text" id="c74" class="l2" maxlength="1">
+            <input type="text" id="c75" class="l2" maxlength="1">
+            <input type="text" id="c76" class="l2" maxlength="1">
+            <input type="text" id="c77" class="l2" maxlength="1">
+            <input type="text" id="c78" class="l2" maxlength="1">
+            <input type="text" id="c80" class="l2" maxlength="1">
+            <input type="text" id="c81" class="l2" maxlength="1">
+            <input type="text" id="c82" class="l2" maxlength="1">
+            <input type="text" id="c83" class="l2" maxlength="1">
+            <input type="text" id="c84" class="l2" maxlength="1">
+            <input type="text" id="c85" class="l2" maxlength="1">
+            <input type="text" id="c86" class="l2" maxlength="1">
+            <input type="text" id="c87" class="l2" maxlength="1">
+            <input type="text" id="c88" class="l2" maxlength="1">
+        </div><br>
+        <div class="right">
+            <select name="challenges" id="challenges">
+                <option value="challenge1" id="challenge1"> Challenege 1 </option>
+                <option value="challenge2" id="challenge2"> Challenege 2 </option>
+                <option value="challenge3" id="challenge3"> Challenege 3 </option>
+                <option value="challenge4" id="challenge4"> Challenege 4 </option>
+                <option value="challenge5" id="challenge5"> Challenege 5 </option>
+                <option value="challenge6" id="challenge6"> Challenege 6 </option>
+                <option value="challenge7" id="challenge7"> Challenege 7 </option>
+                <option value="challenge8" id="challenge8"> Challenege 8 </option>
+                <option value="challenge9" id="challenge9"> Challenege 9 </option>
+                <option value="challenge10" id="challenge10"> Challenege 10 </option>
+            </select>
+            <button id="startGame"> Start Game </button> <br><br><br>
+            <button id="submitAnswer"> Submit Answer </button>
+
+        </div>
+        
+    </div>
+
+    <script src="myjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+.game-body{
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3,200px);
+    grid-template-columns: repeat(3,200px);
+    gap:0;
+    text-align: center;
+    align-content: center;
+}
+.r1{
+    text-align: center;
+    align-content: center;
+    font-size: 150px;
+
+}
+.l1{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+.re{
+    border-bottom: 1px solid black;
+}
+.last{
+    border-right: 1px solid black;
+}
+
+
+.player-active{
+    background-color: blue;
+    color: white;
+}
+
+.body{
+    display: inline-flex;
+}
+
+.players{
+    display: inline-flex;
+    padding: 0;
+    border: 1px solid black;
+    height: 40px;
+}
+
+.player{
+    padding: 10px 20px;
+}
+
+.game-over{
+    display: none;
+    font-size:50px;
+    color: red;
+    height: 300px;
+    align-content: center;
+}

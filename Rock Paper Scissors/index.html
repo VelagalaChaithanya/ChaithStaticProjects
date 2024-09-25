@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock, Paper and Scissors</h1>
+    <div class="gamebody">
+        <div class="play" id="announcement"> </div>
+        <div class="left">
+            <h2>Computer</h2>
+            <div class="computer">
+                <img src="imgs/1.jpeg" alt="" srcset="" id="computer">
+                <h3 id="chosen"> </h3>
+                <p>Score: <span id="computer-score"></span> </p>
+                <h3>Wins:</h3> 
+                    <h3 id="computer-wins">0</h3>
+                
+
+            </div>
+
+        </div>
+        <div class="right">
+            <h2>Player</h2>
+            <div class="player">
+                <div class="options">
+                    <img src="imgs/0.jpeg" alt="" onclick="f0()" style="border-radius: 80%;">
+                    <img src="imgs/1.jpeg" alt="" onclick="f1()" style="border-radius: 80%;">
+                    <img src="imgs/2.jpeg" alt="" onclick="f2()" style="border-radius: 80%;">
+                </div>
+                <h3 id="selected"></h3>
+                
+                <p>Score: <span id="player-score"></span> </p>
+                <h3>Wins:  </h3>
+                <h3 id="player-wins">0</h3>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="myjs.js"></script>
+</body>
+</html>

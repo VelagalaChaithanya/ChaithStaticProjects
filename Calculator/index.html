@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="style.css">
+    <script src =  "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> 
+    </script> 
+   
+</head>
+<body>
+    <div align="center">
+        <div class="main">
+            <div class="head">
+                <textarea class="disp" id="history" disabled></textarea>
+                <textarea class="answer" id="answer" readonly ></textarea>                
+                <textarea type="text" class="work" id="work"></textarea>
+            </div>
+            <button class="opr open">(</button>
+            <button class="opr">)</button>
+            <button class="opr">BS</button>
+            <button class="opr AC">AC</button>
+            <button class="num" id="seven">7</button>
+            <button class="num" id="eight">8</button>
+            <button class="num" id="nine">9</button>
+            <button class="opr" id="divide">/</button>
+            <button class="opr" id="sqrt">sqrt</button>
+            <button class="num" id="four">4</button>
+            <button class="num" id="five">5</button>
+            <button class="num" id="six">6</button>
+            <button class="opr" id="mul">X</button>
+            <button class="opr" id="pow2">x<sup>2</sup></button>
+            <button class="num" id="one">1</button>
+            <button class="num" id="two">2</button>
+            <button class="num" id="three">3</button>
+            <button class="opr" id="sub">-</button>
+            <button class="opr" id="pow">x<sup>n</sup></button>
+            <button class="num" id="point">.</button>
+            <button class="num" id="zero">0</button>
+            <button class="res" id="eq" onclick="result()">=</button>
+            <button class="opr" id="add">+</button>
+            <button class="opr" id="mod">%</button>
+
+        </div>
+        <p class="err" id="err"> </p>
+
+    
+    
+    </div>
+    <div class="hid">
+        <p id="prev"></p>
+
+    </div>
+    <script src="caljs.js"></script>
+
+
+</body>
+</html>

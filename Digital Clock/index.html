@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        .body >p > span{
+            font-size: 100px;
+        }
+        .body >div > span{
+            font-size: 50px;
+        }
+        .body{
+            width: 100%;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <p>
+            <span id="hr"> </span><span>:</span><span id="min"> </span> <span>:</span><span id="sec"> </span>
+
+        </p>
+        <div>
+            <span id="day">  </span><span id="date">  </span><span id="mon">  </span><span id="year">  </span><span id="timezone"> </span>
+        </div>
+
+    </div>
+
+    <script src="myjs.js"></script>
+</body>
+</html>

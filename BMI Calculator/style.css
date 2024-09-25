@@ -1,0 +1,62 @@
+body{
+    padding: 20px;
+    
+
+}
+.body{
+    margin-top: 20px;
+    align-content: center;
+    text-align: center;
+}
+input{
+    padding: 5px;
+    width: 60px;
+}
+button{
+    padding: 5px;    
+}
+
+.bmi-color-pallete{
+    display: inline-flex;
+}
+.w1{
+    height: 20px;
+    width: 150px;
+}
+.s1{
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+}
+h1{
+    margin: 0px;
+}
+
+
+.severe-thinness{
+    background-color: #bb2124;
+    width: 300px;
+}
+.normal{
+    background-color: #22bb33;
+    width: 192px;
+}
+.moderate-thinness{
+    background-color: #ff5b00;
+}
+.mild-thinness{
+    background-color: #ff8f00;
+}
+.overweight{
+    background-color: #ff8f00;
+}
+.Obese-Class-I{
+    background-color: #ff5b00;
+}
+.Obese-Class-II{
+    background-color: #ff5b00;
+}
+.Obese-Class-III{
+    background-color: #bb2124;
+    width: 300px;
+}
+

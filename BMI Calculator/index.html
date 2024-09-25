@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+       <h1>What is body mass index (BMI)?</h1>
+Body mass index (BMI) is a medical screening tool that measures the ratio of your height to your weight to estimate the amount of body fat you have. Healthcare providers calculate BMI by using weight in kilograms (kg) divided by the square of height in meters (m2).
+
+In most people, BMI correlates to body fat — the higher the number, the more body fat you may have — but it’s not accurate in some cases. BMI alone does not diagnose health. Healthcare providers use BMI and other tools and tests to assess someone’s health status and risks.
+
+High body fat may lead to heart disease, stroke and Type 2 diabetes. Low body fat may be related to malnutrition. Just the right amount of body fat helps vitamins and minerals get into your body. It also provides a source of energy for your body, helps maintain body temperature and protects your organs.
+
+You should not use the standard BMI chart to evaluate a child’s or teenager’s weight. Talk to your child's healthcare provider about the optimum weight range for their age and height.
+    <a href="https://my.clevelandclinic.org/health/articles/9464-body-mass-index-bmi">[Source]</a> </div>
+    <div class="body">
+        <fieldset>
+            <legend>BMI Calculator</legend>
+            <label for="height">Height</label> <input type="number" name="height" id="height">cm  or  <input type="number" name="feet" id="feet">feet 
+            <label for="weight">Weight</label> <input type="number" name="weight" id="weight"> kgs
+            <br><br>
+            <button id="compute" onclick="compute()"> Compute </button>
+            <div id="result" hidden>
+            Your BMI: <span id="ans"></span> </div>
+        </fieldset>
+    </div>
+<br>
+    <div class="bmi-color" id="bmi-color" hidden>
+        <div class="bmi-color-pallete">
+            <div class="w1 severe-thinness"> </div>
+            <div class="w1 normal"> </div>
+            <div class="w1 overweight"> </div>
+            <div class="w1 Obese-Class-I"> </div>
+            <div class="w1 Obese-Class-II"> </div>
+            <div class="w1 Obese-Class-III"> </div>
+        </div>
+        
+        <div style="width: 1242px;">
+            <h1 id="scale"> ↑ </h1>
+
+        </div>
+    </div>
+    <br>
+
+
+
+    <div class="summary">
+        In general, the following BMI ranges (in kg/m2) classify different weight types:
+        <ul>
+        <li>Underweight: Less than 18.5.</li>
+        <li>Optimum range: 18.5 to 24.9.</li>
+        <li>Overweight: 25 to 29.9.</li>
+        <li>Class I obesity: 30 to 34.9.</li>
+        <li>Class II obesity: 35 to 39.9.</li>
+        <li>Class III obesity: More than 40.</li>
+        </ul>
+       <h1> Limitations of using BMI as a screening tool for health conditions </h1>
+The BMI as a screening tool for assessing the risk of certain health conditions, such as Type 2 diabetes and heart disease, has some limitations, including:
+<ul>
+<li> The BMI doesn’t measure the location or distribution of body fat. This is an issue because excess fat accumulation in certain areas of your body, such as in your belly (abdomen), is associated with a higher risk of health conditions than excess fat accumulation in other areas of your body, such as in your thighs.
+The relationship between BMI and rate of death often doesn’t account for such factors as family history of diabetes, high blood pressure, cardiovascular disease and high cholesterol (dyslipidemia); familial longevity (average lifespan); or family history of cancer.
+A note from Cleveland Clinic </li>
+
+<li> Body mass index (BMI) is a quick tool that healthcare providers can use to assess your risk for certain health conditions. However, BMI is not always an accurate measurement of body fatness and is not the sole determiner of your general health. If you have any questions or concerns about your weight or your risk for developing certain health conditions, such as heart disease, talk to your healthcare provider. They’re available to help.</li>
+</ul>
+    </div>
+    
+    <script src="myjs.js"></script>
+</body>
+</html>

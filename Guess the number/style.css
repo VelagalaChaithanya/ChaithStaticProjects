@@ -1,0 +1,43 @@
+body{
+    align-content: center;
+    text-align: center;
+}
+input{
+    height: 200px;
+    width: 200px;
+    font-size: 96px;
+    text-align: center;
+}
+button{
+    height: 40px;
+    width: 80px;
+    background-color: greenyellow;
+}
+.main{
+    width: 100%;
+    display: inline-flex;
+}
+.left , .right{
+    min-height: 500px;
+    width: 40%;
+    color: red;
+    align-content: center;
+}
+.middle{
+    width: 20%;
+    align-content: center;
+    text-align: center;
+}
+#errorMsg{
+    color: red;
+    font-size: 12px;
+}
+#playAgain{
+    display: none;
+}
+h2{
+    margin-top: 0px;
+}
+h3{
+    margin-bottom: 0px;
+}
