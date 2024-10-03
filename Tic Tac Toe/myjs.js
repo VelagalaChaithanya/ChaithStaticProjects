@@ -51,7 +51,8 @@ for(let i=0;i<9;i++){
 
         }
         if(sum_fill == 9){
-            document.querySelector('.game-over').style.display='none';
+            document.querySelector('.game-over').style.display='block';
+            document.querySelector('#winner').innerHTML = 'Game Over <br> Draw <br>'
         }
         
     });

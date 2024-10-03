@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        div{
+            width: 100%;
+        }
+        .timer {
+            text-align: center;
+            align-content: center;
+            min-height: 200px;
+            font-size: 50px;
+
+        }
+        input{
+            text-align: center;
+            width: 80px;
+            font-size: 50px;
+        }
+        button{
+            padding: 10px 20px;
+        }
+        #stopAlarm{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer">
+        <input type="text" id="mins" maxlength="2" placeholder="min"> :<input type="text" id="sec" maxlength="2" placeholder="sec"> 
+        <br> <br> <button id="startTimer"> Start Timer</button> <button id="stopAlarm"> Stop </button>
+        <br><br> <p id="msg"></p>
+    </div>
+    
+    <script src="myjs.js"></script>
+</body>
+</html>

@@ -11,12 +11,14 @@ let scores=[0,0];
 
 function f0(){
     let com = Math.trunc(Math.random()*3);
+    clearTimeout(computerAction)
     document.getElementById('computer').src = 'imgs/'+com+'.jpeg';
     begin(0,com);
 }
 
 function f1(){
     let com = Math.trunc(Math.random()*3);
+    clearTimeout(computerAction)
     document.getElementById('computer').src = 'imgs/'+com+'.jpeg';
 
     begin(1,com);
@@ -24,6 +26,7 @@ function f1(){
 
 function f2(){
     let com = Math.trunc(Math.random()*3);
+    clearTimeout(computerAction)
     document.getElementById('computer').src = 'imgs/'+com+'.jpeg';
     begin(2,com);
 }
@@ -34,9 +37,6 @@ function begin(player,com){
     document.getElementById('chosen').textContent = outcomes[com];
     document.getElementById('announcement').textContent = '';
     document.getElementById('announcement').textContent = '';
-
-
-
     if(result == 0){
         playerScore+=1;
     }
@@ -70,5 +70,12 @@ function begin(player,com){
         
     }
 }
+
+let m=0,i=0;
+const computerAction = setInterval(function (){
+    i=m%3;
+    m++;
+    document.getElementById('computer').src = 'imgs/'+i+'.jpeg';
+},100);
 
 
