@@ -1,4 +1,3 @@
-let ttt = [[0,0,0],[0,0,0],[0,0,0]];
 let fill = new Array(9);
 let grid_fill = [0,0,0,0,0,0,0,0,0];
 for(let i=0;i<9;i++)
@@ -29,7 +28,7 @@ for(let i=0;i<9;i++){
         if(grid_fill[i]==0){
             value = value=='O' ? value = 'X' : value = 'O';
             grid_btns[i].textContent = value;
-            grid_fill[i]+=1
+            grid_fill[i]+=1;
             fill[i]=value;
             sum_fill += 1;
             winner = check(fill);
@@ -61,7 +60,6 @@ for(let i=0;i<9;i++){
 
 
 function restart(){
-    ttt = [[0,0,0],[0,0,0],[0,0,0]];
     fill = new Array(9);
     grid_fill = [0,0,0,0,0,0,0,0,0];
     for(let i=0;i<9;i++)

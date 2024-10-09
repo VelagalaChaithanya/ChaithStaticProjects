@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+    text-align: center;
+}
+.body{
+    margin-top: 100px;
+}
+input{
+    width: 75px;
+}
+
+button{
+    padding: 10px 20px;
+}
+
+#errMsg{
+    color: red;
+
+}

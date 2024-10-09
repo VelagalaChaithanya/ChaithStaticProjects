@@ -5,7 +5,6 @@ Random Quote Generate
 Image Slider
 Quiz App
 Currency Calculator
-Password Generator
 Memory Game
 Notes App
 Task Manager
