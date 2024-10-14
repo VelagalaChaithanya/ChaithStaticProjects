@@ -1,24 +1,38 @@
-let keys = 'ABCDEFGHIJKLABCDEFGHIJKL'.split('')
-let completed = new Array(24);
-let score = new Array(24);
-let tries=0;
-for(let i=0;i<24;i++){
-    completed[i]=0;
-    score[i]=0;
-}
-console.log(keys);
+let keys;
+let completed
+let score
+let tries;
 let opened = [];
-let gamekeys = []
+let gamekeys = [];
 let i;
-while(keys.length > 0){
-    i=Math.trunc(Math.random()*keys.length);
-    i=keys.splice(i,1).join();
-    gamekeys.push(i)
-}
-console.log(keys,gamekeys);
-let time=0;
+let time;
 let timeTaken;
+function load(){
+    keys = 'ABCDEFGHIJKLABCDEFGHIJKL'.split('')
+    completed = new Array(24);
+    score = new Array(24);
+    tries=0;
+    for(let i=0;i<24;i++){
+        completed[i]=0;
+        score[i]=0;
+    }
+    console.log(keys);
+    opened = [];
+    gamekeys = [];
+    while(keys.length > 0){
+        i=Math.trunc(Math.random()*keys.length);
+        i=keys.splice(i,1).join();
+        gamekeys.push(i)
+    }
+    console.log(keys,gamekeys);
+    time=0;
+    let game = document.querySelectorAll('.game-card');
+    game.forEach((n)=>{
+        n.classList.remove('correct-answer');
+    });
+    }
 document.getElementById('startGame').addEventListener('click',function(){
+    load();
     let id;
     for(i=1;i<25;i++){
         id = 'c'+i;
@@ -77,6 +91,7 @@ document.getElementById('startGame').addEventListener('click',function(){
                 t1 = min*60 + parseInt(sec);
                 if(document.getElementById('bestTime').textContent == '00:00' || t1 > tries)
                     document.getElementById('bestTime').textContent = Math.trunc(time/60).toString().padStart(2,'0')+':'+ (time%60).toString().padStart(2,'0');
+                load();
             }
         });
     }
