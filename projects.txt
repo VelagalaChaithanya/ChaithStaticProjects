@@ -1,11 +1,9 @@
 Tip Calculator
 Expense Tracker
 ToDo List
-Random Quote Generate
 Image Slider
 Quiz App
 Currency Calculator
-Memory Game
 Notes App
 Task Manager
 Image Gallery
