@@ -13,13 +13,33 @@
     align-content: center;
     font-size: 48px;
 }
-body{
+.body{
     align-content: center;
     display: inline-flex;
-
     text-align: center;
     width: 100%;
 }
+
+.scoreBoard{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 .game-card:hover{
     background-color: lightgreen;
+}
+
+.correct-answer{
+    opacity: 0.5;
+}
+
+.correct-answer:hover{
+    color: white;
+    background-color: white;
+}
+
+img{
+    height: 100%;
+    width: 100%;
 }
