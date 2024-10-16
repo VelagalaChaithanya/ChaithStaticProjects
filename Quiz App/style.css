@@ -1,0 +1,166 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    min-height: 85vh;
+    position: relative;
+}
+
+.header{
+    height: 15vh;
+    width: 100%;
+    background-color: skyblue;
+}
+h1{
+    padding: 0;
+    margin: 0;
+    border-top: 20px solid transparent;
+}
+.body{
+    display: inline-flex;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+.questionBody{
+    display: inline-flex;
+    background-color: rgb(180, 185, 178);
+    height: 350px;
+    width: 700px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    
+}
+.footer{
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    background-color: blue;
+    bottom: -15vh;
+    z-index: 0;
+
+}
+
+.question{
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    width: 80%;
+}
+
+.answer{
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    width: 60%;
+}
+
+.answer:hover{
+    background-color: rgb(82, 130, 219);
+    color: white;
+}
+
+.login, .logout{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    align-content: center;
+    text-align: center;
+    z-index: 4;
+}
+
+.logout{
+    display: none;
+}
+.ready{
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    margin: auto;
+    align-content: center;
+    border-radius: 25px;
+}
+
+
+.optionsPart{
+    display: inline-flex;
+    align-content: center;
+    width: 100%;
+    min-height: 200px;
+}
+
+.left, .right{
+    position: absolute;
+    width: 20%;
+    top: 0;
+    height: 100%;
+    align-content: center;
+}
+
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+
+
+.options{
+    width: 100%
+}
+
+#next, #prev{
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.wrong-answer-yes{
+    color: white;
+    background-color: red;
+    
+
+}
+
+.right-answer-yes{
+    color: white;
+    background-color: green;
+}
+
+#ready{
+    padding: 10px 20px;
+    background-color: white;
+    color: blue;
+    border-radius: 5px;
+    border-color: blue;
+}
+#ready:hover{
+    background-color: blue;
+    color: white;
+}
+
+#clsBtn{
+    padding: 10px 20px;
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    border-color: red;
+}
+#clsBtn:hover{
+    background-color: red;
+    color: white;
+}

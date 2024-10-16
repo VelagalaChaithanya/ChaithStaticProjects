@@ -2,7 +2,6 @@ Tip Calculator
 Expense Tracker
 ToDo List
 Image Slider
-Quiz App
 Currency Calculator
 Notes App
 Task Manager
