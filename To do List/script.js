@@ -1,27 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>Make a table based on JSON data.</h2>
-
-<p id="demo"></p>
-
-<script>
-const dbParam = JSON.stringify({table:"customers",limit:20});
-const xmlhttp = new XMLHttpRequest();
-xmlhttp.onload = function() {
-  const myObj = JSON.parse(this.responseText);
-  let text = "<table border='1'>"
-  for (let x in myObj) {
-    text += "<tr><td>" + myObj[x].name + "</td></tr>";
-  }
-  text += "</table>"    
-  document.getElementById("demo").innerHTML = text;
-}
-xmlhttp.open("POST", "json_demo_html_table.php");
-xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xmlhttp.send("x=" + dbParam);
-</script>
-
-</body>
-</html>
+var obj = {
+    table: []
+ };
+ obj.table.push({id: 1, square:2});
+ var json = JSON.stringify(obj);
+ var fs = require('fs');
+ fs.writeFile('myjsonfile.json', json, 'utf8', callback);
+ fs.readFile('myjsonfile.json', 'utf8', function readFileCallback(err, data){
+    if (err){
+        console.log(err);
+    } else {
+    obj = JSON.parse(data); //now it an object
+    obj.table.push({id: 2, square:3}); //add some data
+    json = JSON.stringify(obj); //convert it back to json
+    fs.writeFile('myjsonfile.json', json, 'utf8', callback); // write it back 
+}});
