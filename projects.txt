@@ -8,7 +8,6 @@ Task Manager
 Image Gallery
 Landing Page
 URL Shortner
-Word Counter
 Speech Recognition
 Weather App
 Api project(crypto, translation, covid)

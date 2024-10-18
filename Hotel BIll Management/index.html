@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bill Managemet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div class="menu-div">
+            <table border="1" class="menu-table">
+                <th>
+                    <td>Item</td>
+                    <td>Cost</td>
+                    <td>Add</td>
+                </th>
+                <tr>
+                    <td class="item1">1</td>
+                    <td class="item1">Dosa</td>
+                    <td class="item1">Rs.40</td>
+                    <td><button id="item1"> + </button></td>
+                </tr>
+                <tr>
+                    <td class="item2">2</td>
+                    <td class="item2">Idly</td>
+                    <td class="item2">Rs.30</td>
+                    <td><button id="item2"> + </button></td>
+                </tr>
+                <tr>
+                    <td class="item3">3</td>
+                    <td class="item3">Bonda</td>
+                    <td class="item3">Rs.30</td>
+                    <td><button id="item3"> + </button></td>
+                </tr>
+                <tr class="addItem-row">
+                    <td colspan="4" class="addItem"> <button id="addItem"> + </button> </td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+        <div class="cart-div">
+            <p class="b1"> Your Cart </p>
+            <table class="cart-table">
+                <tr class="xindex">
+                    <td>S.No</td>
+                    <td>Item name</td>
+                    <td>Quantity</td>
+                    <td>total Cost</td>
+                    <td>Remove</td>
+                </tr>
+                
+                <tr class="total-bill">
+                    <td colspan="3">Total</td>
+                    <td class="totalCost" id="totalCost">Rs.0 </td>
+                    <td></td>
+                </tr>
+            </table>
+            
+
+            <p class="cart-footer">Thank You</p>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
